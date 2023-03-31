@@ -27,3 +27,31 @@ for i in range(10):
     print(f'Current number {curNum} Previous number {prevNum} Sum: {total}')
     prevNum = curNum
     curNum += 1
+
+# Original string is pynative
+# Printing only even index characters
+
+#userString = input()
+samString = 'pynative'
+
+print('Original String is pynative')
+print('Printing only even index characters')
+for i in range(len(samString)):
+    if i % 2 == 0:
+        print(samString[i])
+
+userString = input('Please provide a string')
+print(f'User string is: {userString}')
+print('Printing only even index characters')
+for i in range(len(userString)):
+    if i % 2 == 0:
+        print(userString[i])
+
+
+
+
+
+
+
+
+
