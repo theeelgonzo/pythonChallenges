@@ -46,7 +46,7 @@ print('Printing only even index characters')
 for i in range(len(userString)):
     if i % 2 == 0:
         print(userString[i])
-"""
+
 
 #write a program to remove characters in a string from 0 up to n and 
 #return a new string.
@@ -63,7 +63,29 @@ removeChars('pynative', 4)
 removeChars('pynative', 2)
 removeChars('batman', 2)
 removeChars('batman', 10)
+"""
 
+#check to see if first and last number of a list are the same
+#given list [abcd] result is true
+#give list [efgh] reseult is false
+
+list1 = [1, 2, 3, 4, 5, 1]
+list2 = [10, 20, 30, 40, 50, 10]
+list3 = [3, 4, 5]
+list4 = [7, 1, 4, 10, 999, 11]
+
+def checkList(x):
+    if type(x) != list:
+        print('Provide a list...or else, yarko!')
+    else:
+        if x[0] == x[len(x)-1]:
+            print(f'Given list {x} the result is true!')
+        else:
+            print(f'Given list {x} the result is false!')
+checkList(list1)
+checkList(list2)
+checkList(list3)
+checkList(list4)
 
 
 
