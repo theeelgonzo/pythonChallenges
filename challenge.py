@@ -18,7 +18,7 @@ prodOrSum(40, 30)
 
 #Printing current and previous number sum in a range(10)
 #Current Number # Previous Number # Sum: #
-
+"""
 curNum = 0
 prevNum = 0
 print('Printing current and previous number sum in a range(10)')
@@ -46,9 +46,23 @@ print('Printing only even index characters')
 for i in range(len(userString)):
     if i % 2 == 0:
         print(userString[i])
+"""
 
+#write a program to remove characters in a string from 0 up to n and 
+#return a new string.
+#NOTE: N MUST BE LESS THAN THE LENGTH OF THE STRING
 
+def removeChars(string, n):
+    if n >= len(string):
+        print('The number must be less than the length of your string!')
+    else:
+        newString = string[n:]
+        print(newString)
 
+removeChars('pynative', 4)
+removeChars('pynative', 2)
+removeChars('batman', 2)
+removeChars('batman', 10)
 
 
 
