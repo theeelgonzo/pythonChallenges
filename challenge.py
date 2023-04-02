@@ -11,14 +11,14 @@ def prodOrSum(num1, num2):
 
 prodOrSum(20, 30)
 prodOrSum(40, 30)
-"""
+
 
 #write a program to iterate the first 10 numbers and in each iteration print the
 # sum of the previous and the current numbers
 
 #Printing current and previous number sum in a range(10)
 #Current Number # Previous Number # Sum: #
-"""
+
 curNum = 0
 prevNum = 0
 print('Printing current and previous number sum in a range(10)')
@@ -63,7 +63,6 @@ removeChars('pynative', 4)
 removeChars('pynative', 2)
 removeChars('batman', 2)
 removeChars('batman', 10)
-"""
 
 #check to see if first and last number of a list are the same
 #given list [abcd] result is true
@@ -86,8 +85,22 @@ checkList(list1)
 checkList(list2)
 checkList(list3)
 checkList(list4)
+"""
+# iterate over a given list of numbers and print only those divisibly by 5
+#given list is a b c d e f
+#divisible by 5
+# d
+# e
+# f
+numList = [10, 20, 33, 46, 55]
+print(f'Given list is {numList}')
+print('Divisible by 5:')
+for num in numList:
+    if num % 5 == 0:
+        print(num)
 
-
-
-
-
+# write a program to see how many times the substring 'emma' appears in given
+# string
+# Emma appeared 2 times
+strX = 'Emma is a good developer. Emma is a writer.'
+print('Emma appeared ', strX.count('Emma'), 'times!')
