@@ -104,3 +104,6 @@ for num in numList:
 # Emma appeared 2 times
 strX = 'Emma is a good developer. Emma is a writer.'
 print('Emma appeared ', strX.count('Emma'), 'times!')
+
+for num in range(1, 6):
+    print(str(num) * num)
