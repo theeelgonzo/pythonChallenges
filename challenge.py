@@ -107,3 +107,23 @@ print('Emma appeared ', strX.count('Emma'), 'times!')
 
 for num in range(1, 6):
     print(str(num) * num)
+
+# write program to check if three digit number is palindrome number
+#original number 121/125
+# yes/no, given number is/is not palindrome number
+num1 = 121
+num2 = 125
+
+def checkPal(number):
+    print(f'Original number is {number}')
+    strNum = str(number)
+    revNum = strNum[::-1]
+    print(int(revNum))
+    if list(revNum)[0] == list(strNum)[0]:
+        print('Yes, given number is palindrome number')
+    else:
+        print('No, given number is not palindrome number')
+
+checkPal(num1)
+checkPal(num2)
+
