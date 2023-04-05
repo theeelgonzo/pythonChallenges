@@ -138,3 +138,8 @@ for num in list2:
     if num % 2 == 0:
         list3.append(num)
 print(list3)
+ 
+ # extract digits from 7536 in reverse order and add space
+digit = 7536
+revDig = ' '.join(str(digit)[::-1])
+print(revDig)
