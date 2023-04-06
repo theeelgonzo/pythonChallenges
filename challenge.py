@@ -143,3 +143,11 @@ print(list3)
 digit = 7536
 revDig = ' '.join(str(digit)[::-1])
 print(revDig)
+
+x = 1
+y = 1
+for i in range (1, 11):
+    for j in range (1, 11):
+        k = j * i
+        print(k, end=' ')
+    print('\t\t')
